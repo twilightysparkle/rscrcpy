@@ -1,3 +1,12 @@
+## scrcpy (v5.0.1-root)
+
+* This is a **Fork** scrcpy for add root (ignore FLAG_SECURE) and experiments.
+* **Bugs from this fork should be reported** [**here**](https://github.com/Mr-Precise/rscrcpy/issues), not to the original author.
+* Original author [**Genymobile/scrcpy**](https://github.com/Genymobile/scrcpy)  
+---
+* *Everything you do is at your own risk!*  
+For safety, we recommend using the [official](https://github.com/Genymobile/scrcpy) version.
+
 > [!WARNING]
 > **This GitHub repo (<https://github.com/Genymobile/scrcpy>) is the only official
 source for the project. Do not download releases from random websites, even if
@@ -97,6 +106,13 @@ Note that USB debugging is not required to run scrcpy in [OTG mode](doc/otg.md).
 
 There are a lot of options, [documented](#user-documentation) in separate pages.
 Here are just some common examples.
+
+ - Use ROOT:  
+   Can be combined with other options (read below)
+
+   ```bash
+   scrcpy --root
+   ```
 
  - Capture the screen in H.265 (better quality), limit the size to 1920, limit
    the frame rate to 60fps, disable audio, and control the device by simulating
