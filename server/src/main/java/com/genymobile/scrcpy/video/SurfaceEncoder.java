@@ -20,6 +20,7 @@ import android.os.Build;
 import android.os.Looper;
 import android.os.SystemClock;
 import android.view.Surface;
+import android.system.Os;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

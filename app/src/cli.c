@@ -86,6 +86,7 @@ enum {
     OPT_DISPLAY_ORIENTATION,
     OPT_RECORD_ORIENTATION,
     OPT_ORIENTATION,
+    OPT_ROOT,
     OPT_KEYBOARD,
     OPT_MOUSE,
     OPT_NO_WINDOW,
@@ -854,6 +855,11 @@ static const struct sc_option options[] = {
         .text = "By default, scrcpy mirrors only the video when audio capture "
                 "fails on the device. This option makes scrcpy fail if audio "
                 "is enabled but does not work."
+    },
+    {
+        .longopt_id = OPT_ROOT,
+        .longopt = "root",
+        .text = "Launch the server as root (disabled by default).",
     },
     {
         .shortopt = 's',
@@ -2932,6 +2938,9 @@ parse_args_with_getopt(struct scrcpy_cli_args *args, int argc, char *argv[],
                 break;
             case OPT_CAMERA_ZOOM:
                 opts->camera_zoom = optarg;
+                break;
+            case OPT_ROOT:
+                opts->root = true;
                 break;
             case OPT_NO_WINDOW:
                 opts->window = false;

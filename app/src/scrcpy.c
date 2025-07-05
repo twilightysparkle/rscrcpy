@@ -485,6 +485,7 @@ scrcpy(struct scrcpy_options *options) {
         .ignore_video_encoder_constraints =
             options->ignore_video_encoder_constraints,
         .list = options->list,
+        .root = options->root,
     };
 
     static const struct sc_server_callbacks cbs = {

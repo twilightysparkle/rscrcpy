@@ -77,6 +77,7 @@ struct sc_server_params {
     bool flex_display;
     bool ignore_video_encoder_constraints;
     uint8_t list;
+    bool root;
 };
 
 struct sc_server {

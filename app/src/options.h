@@ -361,6 +361,7 @@ struct scrcpy_options {
 #define SC_OPTION_LIST_CAMERA_SIZES 0x8
 #define SC_OPTION_LIST_APPS 0x10
     uint8_t list;
+    bool root;
     bool window;
     bool mouse_hover;
     bool audio_dup;

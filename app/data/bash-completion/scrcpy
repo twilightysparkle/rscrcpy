@@ -88,6 +88,7 @@ _scrcpy() {
         --render-driver=
         --render-fit=
         --require-audio
+        --root
         -s --serial=
         -S --turn-screen-off
         --screen-off-timeout=
