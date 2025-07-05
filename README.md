@@ -2,8 +2,10 @@
 
 * This is a **Fork** scrcpy for add root (ignore FLAG_SECURE) and experiments.
 * **Bugs from this fork should be reported** [**here**](https://github.com/Mr-Precise/rscrcpy/issues), not to the original author.
-* Original author [**Genymobile/scrcpy**](https://github.com/Genymobile/scrcpy)  
+* Original author [**Genymobile/scrcpy**](https://github.com/Genymobile/scrcpy)
+* Based on outdated source code changes by [RiggiG/scrcpy-root](https://github.com/RiggiG/scrcpy-root/tree/dacdc2e487ba004bc91ea495569ddcf194756434)
 ---
+
 * *Everything you do is at your own risk!*  
 For safety, we recommend using the [official](https://github.com/Genymobile/scrcpy) version.
 
