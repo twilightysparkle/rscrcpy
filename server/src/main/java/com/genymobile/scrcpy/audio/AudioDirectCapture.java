@@ -63,7 +63,8 @@ public class AudioDirectCapture implements AudioCapture {
         Intent intent = new Intent(Intent.ACTION_MAIN);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        intent.setComponent(new ComponentName(FakeContext.PACKAGE_SHELL, "com.android.shell.HeapDumpActivity"));        ServiceManager.getActivityManager().startActivity(intent);
+        intent.setComponent(new ComponentName(FakeContext.PACKAGE_SHELL, "com.android.shell.HeapDumpActivity"));
+        ServiceManager.getActivityManager().startActivity(intent);
     }
 
     private static void stopWorkaroundAndroid11() {
